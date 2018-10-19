@@ -11,7 +11,9 @@ module WhatShouldIEat
 
   def WhatShouldIEat.print_recipe 
   	random_recipe = WhatShouldIEat.choose_recipe
-  	puts "Here's a recipe for you:\n#{random_recipe['label']} \n#{random_recipe['url']}" 
+  	name = random_recipe['label']
+  	url = random_recipe['url']
+  	puts "Here's a recipe for you:\n#{name} \n#{url}" 
 	end
 
 end
