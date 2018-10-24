@@ -2,4 +2,6 @@
 
 require "what_should_i_eat"
 
-WhatShouldIEat.print_recipe
+recipe = WhatShouldIEat::Recipe.new
+recipe = recipe.choose_recipe
+WhatShouldIEat::Printing.print_recipe(recipe)
